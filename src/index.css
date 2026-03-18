@@ -1,0 +1,181 @@
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/500.css";
+@import "@fontsource/playfair-display/600.css";
+@import "@fontsource/playfair-display/700.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ====================================================
+       BRAND COLORS
+       Modify these HSL values to change the site's theme 
+       ==================================================== */
+
+    /* Soft Cream - Primary Background */
+    --background: 40 50% 98%;
+    --foreground: 0 0% 10%;
+
+    /* Cards use slightly warmer cream */
+    --card: 40 40% 97%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 40 50% 98%;
+    --popover-foreground: 0 0% 10%;
+
+    /* PRIMARY BRAND COLOR (Currently Gold) */
+    --primary: 43 64% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    /* SECONDARY BRAND COLOR (Soft muted cream) */
+    --secondary: 40 30% 94%;
+    --secondary-foreground: 0 0% 10%;
+
+    /* Muted elements */
+    --muted: 40 20% 92%;
+    --muted-foreground: 0 0% 40%;
+
+    /* Gold accent variations */
+    --accent: 43 64% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Warm border */
+    --border: 40 30% 88%;
+    --input: 40 30% 90%;
+    --ring: 43 64% 52%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens for gifting theme */
+    --gold: 43 64% 52%;
+    --gold-light: 43 70% 70%;
+    --gold-dark: 43 64% 42%;
+    --cream: 40 50% 98%;
+    --cream-dark: 40 40% 94%;
+    --charcoal: 0 0% 10%;
+    --charcoal-light: 0 0% 30%;
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(43 64% 52%), hsl(43 70% 62%));
+    --gradient-cream: linear-gradient(180deg, hsl(40 50% 98%), hsl(40 40% 95%));
+    --gradient-hero: linear-gradient(135deg, hsl(40 50% 98%) 0%, hsl(43 64% 52% / 0.1) 100%);
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px hsl(0 0% 10% / 0.04);
+    --shadow-md: 0 4px 16px hsl(0 0% 10% / 0.06);
+    --shadow-lg: 0 8px 32px hsl(0 0% 10% / 0.08);
+    --shadow-gold: 0 4px 24px hsl(43 64% 52% / 0.25);
+
+    /* Sidebar (keeping for compatibility) */
+    --sidebar-background: 40 50% 98%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 43 64% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 40 40% 94%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 40 30% 88%;
+    --sidebar-ring: 43 64% 52%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 40 50% 98%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 40 50% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 40 50% 98%;
+
+    --primary: 43 64% 52%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 40 50% 98%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 40 20% 70%;
+
+    --accent: 43 64% 52%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 40 50% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 43 64% 52%;
+
+    --gold: 43 64% 52%;
+    --gold-light: 43 70% 62%;
+    --gold-dark: 43 64% 42%;
+    --cream: 40 50% 98%;
+    --cream-dark: 40 40% 94%;
+    --charcoal: 0 0% 10%;
+    --charcoal-light: 0 0% 30%;
+
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 40 50% 98%;
+    --sidebar-primary: 43 64% 52%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 0 0% 16%;
+    --sidebar-accent-foreground: 40 50% 98%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 43 64% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  .font-sans {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(43 64% 52%), hsl(43 70% 62%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-gold {
+    background: linear-gradient(135deg, hsl(43 64% 52%), hsl(43 70% 62%));
+  }
+
+  .bg-gradient-cream {
+    background: linear-gradient(180deg, hsl(40 50% 98%), hsl(40 40% 95%));
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-md);
+  }
+
+  .shadow-gold-glow {
+    box-shadow: var(--shadow-gold);
+  }
+}
