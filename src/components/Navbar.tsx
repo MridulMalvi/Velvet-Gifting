@@ -150,6 +150,5 @@ export default function Navbar() {
       </header>
 
       <SearchModal open={isSearchOpen} onOpenChange={setIsSearchOpen} />
-    </>
-  );
+    </> );
 }
