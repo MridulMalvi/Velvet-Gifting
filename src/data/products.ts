@@ -18,7 +18,7 @@ export const products: Product[] = [
     price: 89.00,
     category: "Personalized",
     occasionTags: ["Birthday", "Anniversary", "Corporate"],
-    imageUrl: "/images/products/wallet.jpg",
+    imageUrl: "/images/products/wallet.png",
     stockCount: 24,
     featured: true
   },
@@ -29,7 +29,7 @@ export const products: Product[] = [
     price: 65.00,
     category: "Food & Treats",
     occasionTags: ["Birthday", "Anniversary", "Just Because"],
-    imageUrl: "/images/products/chocolate.jpg",
+    imageUrl: "/images/products/chocolate.png",
     stockCount: 50,
     featured: true
   },
@@ -40,7 +40,7 @@ export const products: Product[] = [
     price: 145.00,
     category: "Home Decor",
     occasionTags: ["Wedding", "Anniversary", "Corporate"],
-    imageUrl: "/images/products/vase.jpg",
+    imageUrl: "/images/products/vase.png",
     stockCount: 15,
     featured: true
   },
@@ -51,7 +51,7 @@ export const products: Product[] = [
     price: 78.00,
     category: "Home Decor",
     occasionTags: ["Birthday", "Just Because", "Corporate"],
-    imageUrl: "/images/products/candles.jpg",
+    imageUrl: "/images/products/candles.png",
     stockCount: 38,
     featured: false
   },
@@ -62,7 +62,7 @@ export const products: Product[] = [
     price: 120.00,
     category: "Flowers",
     occasionTags: ["Birthday", "Anniversary", "Wedding", "Just Because"],
-    imageUrl: "/images/products/flowers.jpg",
+    imageUrl: "/images/products/flowers.png",
     stockCount: 20,
     featured: true
   },
@@ -73,7 +73,7 @@ export const products: Product[] = [
     price: 55.00,
     category: "Food & Treats",
     occasionTags: ["Birthday", "Corporate", "Just Because"],
-    imageUrl: "/images/products/tea.jpg",
+    imageUrl: "/images/products/tea.png",
     stockCount: 42,
     featured: false
   },
@@ -84,7 +84,7 @@ export const products: Product[] = [
     price: 135.00,
     category: "Fashion",
     occasionTags: ["Birthday", "Anniversary", "Wedding"],
-    imageUrl: "/images/products/scarf.jpg",
+    imageUrl: "/images/products/scarf.png",
     stockCount: 18,
     featured: true
   },
@@ -95,7 +95,7 @@ export const products: Product[] = [
     price: 95.00,
     category: "Cakes",
     occasionTags: ["Birthday", "Anniversary", "Wedding"],
-    imageUrl: "/images/products/cake.jpg",
+    imageUrl: "/images/products/cake.png",
     stockCount: 8,
     featured: true
   }
