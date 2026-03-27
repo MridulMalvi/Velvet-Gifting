@@ -1,6 +1,6 @@
 # Velvet Gifting - Premium E-Commerce Platform
 
-Velvet Gifting is a high-end, fully functional e-commerce platform built with a modern frontend stack. It features a sophisticated "Zero-Cost Architecture" that leverages local state for cart management and routes final orders directly to business owners via WhatsApp.
+Velvet Gifting is a fully functional e-commerce platform built with a modern frontend stack. It features a sophisticated Architecture leverages local state for cart management and routes final orders directly to business owners via WhatsApp.
 
 ## 🚀 Tech Stack
 
